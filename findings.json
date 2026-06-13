@@ -1,0 +1,469 @@
+{
+  "scan_metadata": {
+    "spec_file": "openapi.yaml",
+    "timestamp": "2026-06-12T18:54:52.917080+00:00",
+    "requests_sent": 126,
+    "issues_found": 51
+  },
+  "findings": [
+    {
+      "severity": "CRASH",
+      "description": "Server returned 500",
+      "payload": "path_param[user_id]='abc'",
+      "status_code": 500,
+      "response_snippet": "<!doctype html>\n<html lang=en>\n<title>500 Internal Server Error</title>\n<h1>Internal Server Error</h1>\n<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>\n",
+      "endpoint": "GET http://127.0.0.1:5000/users/abc",
+      "timestamp": "2026-06-12T18:54:45.523912+00:00"
+    },
+    {
+      "severity": "CRASH",
+      "description": "Server returned 500",
+      "payload": "path_param[user_id]='null'",
+      "status_code": 500,
+      "response_snippet": "<!doctype html>\n<html lang=en>\n<title>500 Internal Server Error</title>\n<h1>Internal Server Error</h1>\n<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>\n",
+      "endpoint": "GET http://127.0.0.1:5000/users/null",
+      "timestamp": "2026-06-12T18:54:45.637288+00:00"
+    },
+    {
+      "severity": "CRASH",
+      "description": "Server returned 500",
+      "payload": "path_param[user_id]='1.5'",
+      "status_code": 500,
+      "response_snippet": "<!doctype html>\n<html lang=en>\n<title>500 Internal Server Error</title>\n<h1>Internal Server Error</h1>\n<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>\n",
+      "endpoint": "GET http://127.0.0.1:5000/users/1.5",
+      "timestamp": "2026-06-12T18:54:45.700220+00:00"
+    },
+    {
+      "severity": "CRASH",
+      "description": "Server returned 500",
+      "payload": "path_param[user_id]='1e10'",
+      "status_code": 500,
+      "response_snippet": "<!doctype html>\n<html lang=en>\n<title>500 Internal Server Error</title>\n<h1>Internal Server Error</h1>\n<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>\n",
+      "endpoint": "GET http://127.0.0.1:5000/users/1e10",
+      "timestamp": "2026-06-12T18:54:45.766495+00:00"
+    },
+    {
+      "severity": "CRASH",
+      "description": "Server returned 500",
+      "payload": "path_param[user_id]='0x1A'",
+      "status_code": 500,
+      "response_snippet": "<!doctype html>\n<html lang=en>\n<title>500 Internal Server Error</title>\n<h1>Internal Server Error</h1>\n<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>\n",
+      "endpoint": "GET http://127.0.0.1:5000/users/0x1A",
+      "timestamp": "2026-06-12T18:54:45.906259+00:00"
+    },
+    {
+      "severity": "CRASH",
+      "description": "Server returned 500",
+      "payload": "body=[]",
+      "status_code": 500,
+      "response_snippet": "<!doctype html>\n<html lang=en>\n<title>500 Internal Server Error</title>\n<h1>Internal Server Error</h1>\n<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>\n",
+      "endpoint": "POST http://127.0.0.1:5000/users",
+      "timestamp": "2026-06-12T18:54:49.975756+00:00"
+    },
+    {
+      "severity": "CRASH",
+      "description": "Server returned 500",
+      "payload": "body=\"just a string\"",
+      "status_code": 500,
+      "response_snippet": "<!doctype html>\n<html lang=en>\n<title>500 Internal Server Error</title>\n<h1>Internal Server Error</h1>\n<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>\n",
+      "endpoint": "POST http://127.0.0.1:5000/users",
+      "timestamp": "2026-06-12T18:54:50.040436+00:00"
+    },
+    {
+      "severity": "CRASH",
+      "description": "Server returned 500",
+      "payload": "body=12345",
+      "status_code": 500,
+      "response_snippet": "<!doctype html>\n<html lang=en>\n<title>500 Internal Server Error</title>\n<h1>Internal Server Error</h1>\n<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>\n",
+      "endpoint": "POST http://127.0.0.1:5000/users",
+      "timestamp": "2026-06-12T18:54:50.097444+00:00"
+    },
+    {
+      "severity": "CRASH",
+      "description": "Server returned 500",
+      "payload": "body={\"query\": \"\"}",
+      "status_code": 500,
+      "response_snippet": "<!doctype html>\n<html lang=en>\n<title>500 Internal Server Error</title>\n<h1>Internal Server Error</h1>\n<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>\n",
+      "endpoint": "POST http://127.0.0.1:5000/search",
+      "timestamp": "2026-06-12T18:54:50.157688+00:00"
+    },
+    {
+      "severity": "CRASH",
+      "description": "Server returned 500",
+      "payload": "body={\"query\": \" \"}",
+      "status_code": 500,
+      "response_snippet": "<!doctype html>\n<html lang=en>\n<title>500 Internal Server Error</title>\n<h1>Internal Server Error</h1>\n<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>\n",
+      "endpoint": "POST http://127.0.0.1:5000/search",
+      "timestamp": "2026-06-12T18:54:50.216421+00:00"
+    },
+    {
+      "severity": "CRASH",
+      "description": "Server returned 500",
+      "payload": "body={\"query\": \"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "status_code": 500,
+      "response_snippet": "<!doctype html>\n<html lang=en>\n<title>500 Internal Server Error</title>\n<h1>Internal Server Error</h1>\n<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>\n",
+      "endpoint": "POST http://127.0.0.1:5000/search",
+      "timestamp": "2026-06-12T18:54:50.281470+00:00"
+    },
+    {
+      "severity": "CRASH",
+      "description": "Server returned 500",
+      "payload": "body={\"query\": \"null\"}",
+      "status_code": 500,
+      "response_snippet": "<!doctype html>\n<html lang=en>\n<title>500 Internal Server Error</title>\n<h1>Internal Server Error</h1>\n<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>\n",
+      "endpoint": "POST http://127.0.0.1:5000/search",
+      "timestamp": "2026-06-12T18:54:50.339436+00:00"
+    },
+    {
+      "severity": "CRASH",
+      "description": "Server returned 500",
+      "payload": "body={\"query\": \"undefined\"}",
+      "status_code": 500,
+      "response_snippet": "<!doctype html>\n<html lang=en>\n<title>500 Internal Server Error</title>\n<h1>Internal Server Error</h1>\n<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>\n",
+      "endpoint": "POST http://127.0.0.1:5000/search",
+      "timestamp": "2026-06-12T18:54:50.394059+00:00"
+    },
+    {
+      "severity": "CRASH",
+      "description": "Server returned 500",
+      "payload": "body={\"query\": \"0\"}",
+      "status_code": 500,
+      "response_snippet": "<!doctype html>\n<html lang=en>\n<title>500 Internal Server Error</title>\n<h1>Internal Server Error</h1>\n<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>\n",
+      "endpoint": "POST http://127.0.0.1:5000/search",
+      "timestamp": "2026-06-12T18:54:50.450806+00:00"
+    },
+    {
+      "severity": "CRASH",
+      "description": "Server returned 500",
+      "payload": "body={\"query\": \"-1\"}",
+      "status_code": 500,
+      "response_snippet": "<!doctype html>\n<html lang=en>\n<title>500 Internal Server Error</title>\n<h1>Internal Server Error</h1>\n<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>\n",
+      "endpoint": "POST http://127.0.0.1:5000/search",
+      "timestamp": "2026-06-12T18:54:50.514983+00:00"
+    },
+    {
+      "severity": "CRASH",
+      "description": "Server returned 500",
+      "payload": "body={\"query\": \"99999999999999999999\"}",
+      "status_code": 500,
+      "response_snippet": "<!doctype html>\n<html lang=en>\n<title>500 Internal Server Error</title>\n<h1>Internal Server Error</h1>\n<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>\n",
+      "endpoint": "POST http://127.0.0.1:5000/search",
+      "timestamp": "2026-06-12T18:54:50.581997+00:00"
+    },
+    {
+      "severity": "CRASH",
+      "description": "Server returned 500",
+      "payload": "body={\"query\": \"\\u0000\"}",
+      "status_code": 500,
+      "response_snippet": "<!doctype html>\n<html lang=en>\n<title>500 Internal Server Error</title>\n<h1>Internal Server Error</h1>\n<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>\n",
+      "endpoint": "POST http://127.0.0.1:5000/search",
+      "timestamp": "2026-06-12T18:54:50.649099+00:00"
+    },
+    {
+      "severity": "CRASH",
+      "description": "Server returned 500",
+      "payload": "body={\"query\": \"\\n\\r\\n\"}",
+      "status_code": 500,
+      "response_snippet": "<!doctype html>\n<html lang=en>\n<title>500 Internal Server Error</title>\n<h1>Internal Server Error</h1>\n<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>\n",
+      "endpoint": "POST http://127.0.0.1:5000/search",
+      "timestamp": "2026-06-12T18:54:50.716296+00:00"
+    },
+    {
+      "severity": "CRASH",
+      "description": "Server returned 500",
+      "payload": "body={\"query\": \"' OR 1=1--\"}",
+      "status_code": 500,
+      "response_snippet": "<!doctype html>\n<html lang=en>\n<title>500 Internal Server Error</title>\n<h1>Internal Server Error</h1>\n<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>\n",
+      "endpoint": "POST http://127.0.0.1:5000/search",
+      "timestamp": "2026-06-12T18:54:50.780634+00:00"
+    },
+    {
+      "severity": "CRASH",
+      "description": "Server returned 500",
+      "payload": "body={\"query\": \"'; DROP TABLE users;--\"}",
+      "status_code": 500,
+      "response_snippet": "<!doctype html>\n<html lang=en>\n<title>500 Internal Server Error</title>\n<h1>Internal Server Error</h1>\n<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>\n",
+      "endpoint": "POST http://127.0.0.1:5000/search",
+      "timestamp": "2026-06-12T18:54:50.847244+00:00"
+    },
+    {
+      "severity": "CRASH",
+      "description": "Server returned 500",
+      "payload": "body={\"query\": \"1; SELECT * FROM users\"}",
+      "status_code": 500,
+      "response_snippet": "<!doctype html>\n<html lang=en>\n<title>500 Internal Server Error</title>\n<h1>Internal Server Error</h1>\n<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>\n",
+      "endpoint": "POST http://127.0.0.1:5000/search",
+      "timestamp": "2026-06-12T18:54:50.911701+00:00"
+    },
+    {
+      "severity": "CRASH",
+      "description": "Server returned 500",
+      "payload": "body={\"query\": \"UNION SELECT NULL,NULL,NULL--\"}",
+      "status_code": 500,
+      "response_snippet": "<!doctype html>\n<html lang=en>\n<title>500 Internal Server Error</title>\n<h1>Internal Server Error</h1>\n<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>\n",
+      "endpoint": "POST http://127.0.0.1:5000/search",
+      "timestamp": "2026-06-12T18:54:50.966536+00:00"
+    },
+    {
+      "severity": "CRASH",
+      "description": "Server returned 500",
+      "payload": "body={\"query\": \"; ls -la\"}",
+      "status_code": 500,
+      "response_snippet": "<!doctype html>\n<html lang=en>\n<title>500 Internal Server Error</title>\n<h1>Internal Server Error</h1>\n<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>\n",
+      "endpoint": "POST http://127.0.0.1:5000/search",
+      "timestamp": "2026-06-12T18:54:51.031546+00:00"
+    },
+    {
+      "severity": "CRASH",
+      "description": "Server returned 500",
+      "payload": "body={\"query\": \"| cat /etc/passwd\"}",
+      "status_code": 500,
+      "response_snippet": "<!doctype html>\n<html lang=en>\n<title>500 Internal Server Error</title>\n<h1>Internal Server Error</h1>\n<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>\n",
+      "endpoint": "POST http://127.0.0.1:5000/search",
+      "timestamp": "2026-06-12T18:54:51.093102+00:00"
+    },
+    {
+      "severity": "CRASH",
+      "description": "Server returned 500",
+      "payload": "body={\"query\": \"$(whoami)\"}",
+      "status_code": 500,
+      "response_snippet": "<!doctype html>\n<html lang=en>\n<title>500 Internal Server Error</title>\n<h1>Internal Server Error</h1>\n<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>\n",
+      "endpoint": "POST http://127.0.0.1:5000/search",
+      "timestamp": "2026-06-12T18:54:51.159912+00:00"
+    },
+    {
+      "severity": "CRASH",
+      "description": "Server returned 500",
+      "payload": "body={\"query\": \"`id`\"}",
+      "status_code": 500,
+      "response_snippet": "<!doctype html>\n<html lang=en>\n<title>500 Internal Server Error</title>\n<h1>Internal Server Error</h1>\n<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>\n",
+      "endpoint": "POST http://127.0.0.1:5000/search",
+      "timestamp": "2026-06-12T18:54:51.226017+00:00"
+    },
+    {
+      "severity": "CRASH",
+      "description": "Server returned 500",
+      "payload": "body={\"query\": \"<script>alert(1)</script>\"}",
+      "status_code": 500,
+      "response_snippet": "<!doctype html>\n<html lang=en>\n<title>500 Internal Server Error</title>\n<h1>Internal Server Error</h1>\n<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>\n",
+      "endpoint": "POST http://127.0.0.1:5000/search",
+      "timestamp": "2026-06-12T18:54:51.288483+00:00"
+    },
+    {
+      "severity": "CRASH",
+      "description": "Server returned 500",
+      "payload": "body={\"query\": \"<img src=x onerror=alert(1)>\"}",
+      "status_code": 500,
+      "response_snippet": "<!doctype html>\n<html lang=en>\n<title>500 Internal Server Error</title>\n<h1>Internal Server Error</h1>\n<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>\n",
+      "endpoint": "POST http://127.0.0.1:5000/search",
+      "timestamp": "2026-06-12T18:54:51.351980+00:00"
+    },
+    {
+      "severity": "CRASH",
+      "description": "Server returned 500",
+      "payload": "body={\"query\": \"{{7*7}}\"}",
+      "status_code": 500,
+      "response_snippet": "<!doctype html>\n<html lang=en>\n<title>500 Internal Server Error</title>\n<h1>Internal Server Error</h1>\n<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>\n",
+      "endpoint": "POST http://127.0.0.1:5000/search",
+      "timestamp": "2026-06-12T18:54:51.414237+00:00"
+    },
+    {
+      "severity": "CRASH",
+      "description": "Server returned 500",
+      "payload": "body={\"query\": \"${7*7}\"}",
+      "status_code": 500,
+      "response_snippet": "<!doctype html>\n<html lang=en>\n<title>500 Internal Server Error</title>\n<h1>Internal Server Error</h1>\n<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>\n",
+      "endpoint": "POST http://127.0.0.1:5000/search",
+      "timestamp": "2026-06-12T18:54:51.478081+00:00"
+    },
+    {
+      "severity": "CRASH",
+      "description": "Server returned 500",
+      "payload": "body={\"query\": null}",
+      "status_code": 500,
+      "response_snippet": "<!doctype html>\n<html lang=en>\n<title>500 Internal Server Error</title>\n<h1>Internal Server Error</h1>\n<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>\n",
+      "endpoint": "POST http://127.0.0.1:5000/search",
+      "timestamp": "2026-06-12T18:54:51.543189+00:00"
+    },
+    {
+      "severity": "CRASH",
+      "description": "Server returned 500",
+      "payload": "body={\"query\": true}",
+      "status_code": 500,
+      "response_snippet": "<!doctype html>\n<html lang=en>\n<title>500 Internal Server Error</title>\n<h1>Internal Server Error</h1>\n<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>\n",
+      "endpoint": "POST http://127.0.0.1:5000/search",
+      "timestamp": "2026-06-12T18:54:51.606246+00:00"
+    },
+    {
+      "severity": "CRASH",
+      "description": "Server returned 500",
+      "payload": "body={\"query\": false}",
+      "status_code": 500,
+      "response_snippet": "<!doctype html>\n<html lang=en>\n<title>500 Internal Server Error</title>\n<h1>Internal Server Error</h1>\n<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>\n",
+      "endpoint": "POST http://127.0.0.1:5000/search",
+      "timestamp": "2026-06-12T18:54:51.670530+00:00"
+    },
+    {
+      "severity": "CRASH",
+      "description": "Server returned 500",
+      "payload": "body={\"query\": []}",
+      "status_code": 500,
+      "response_snippet": "<!doctype html>\n<html lang=en>\n<title>500 Internal Server Error</title>\n<h1>Internal Server Error</h1>\n<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>\n",
+      "endpoint": "POST http://127.0.0.1:5000/search",
+      "timestamp": "2026-06-12T18:54:51.736010+00:00"
+    },
+    {
+      "severity": "CRASH",
+      "description": "Server returned 500",
+      "payload": "body={\"query\": {}}",
+      "status_code": 500,
+      "response_snippet": "<!doctype html>\n<html lang=en>\n<title>500 Internal Server Error</title>\n<h1>Internal Server Error</h1>\n<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>\n",
+      "endpoint": "POST http://127.0.0.1:5000/search",
+      "timestamp": "2026-06-12T18:54:51.801946+00:00"
+    },
+    {
+      "severity": "CRASH",
+      "description": "Server returned 500",
+      "payload": "body={\"query\": [null]}",
+      "status_code": 500,
+      "response_snippet": "<!doctype html>\n<html lang=en>\n<title>500 Internal Server Error</title>\n<h1>Internal Server Error</h1>\n<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>\n",
+      "endpoint": "POST http://127.0.0.1:5000/search",
+      "timestamp": "2026-06-12T18:54:51.867496+00:00"
+    },
+    {
+      "severity": "CRASH",
+      "description": "Server returned 500",
+      "payload": "body={\"query\": {\"__proto__\": \"polluted\"}}",
+      "status_code": 500,
+      "response_snippet": "<!doctype html>\n<html lang=en>\n<title>500 Internal Server Error</title>\n<h1>Internal Server Error</h1>\n<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>\n",
+      "endpoint": "POST http://127.0.0.1:5000/search",
+      "timestamp": "2026-06-12T18:54:51.934378+00:00"
+    },
+    {
+      "severity": "CRASH",
+      "description": "Server returned 500",
+      "payload": "body={\"query\": 12345}",
+      "status_code": 500,
+      "response_snippet": "<!doctype html>\n<html lang=en>\n<title>500 Internal Server Error</title>\n<h1>Internal Server Error</h1>\n<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>\n",
+      "endpoint": "POST http://127.0.0.1:5000/search",
+      "timestamp": "2026-06-12T18:54:52.000685+00:00"
+    },
+    {
+      "severity": "CRASH",
+      "description": "Server returned 500",
+      "payload": "body={\"query\": 3.14159}",
+      "status_code": 500,
+      "response_snippet": "<!doctype html>\n<html lang=en>\n<title>500 Internal Server Error</title>\n<h1>Internal Server Error</h1>\n<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>\n",
+      "endpoint": "POST http://127.0.0.1:5000/search",
+      "timestamp": "2026-06-12T18:54:52.063806+00:00"
+    },
+    {
+      "severity": "CRASH",
+      "description": "Server returned 500",
+      "payload": "body={}",
+      "status_code": 500,
+      "response_snippet": "<!doctype html>\n<html lang=en>\n<title>500 Internal Server Error</title>\n<h1>Internal Server Error</h1>\n<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>\n",
+      "endpoint": "POST http://127.0.0.1:5000/search",
+      "timestamp": "2026-06-12T18:54:52.125423+00:00"
+    },
+    {
+      "severity": "CRASH",
+      "description": "Server returned 500",
+      "payload": "body={\"query\": \"fuzztest\", \"__admin\": true, \"role\": \"admin\", \"extra_field\": \"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "status_code": 500,
+      "response_snippet": "<!doctype html>\n<html lang=en>\n<title>500 Internal Server Error</title>\n<h1>Internal Server Error</h1>\n<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>\n",
+      "endpoint": "POST http://127.0.0.1:5000/search",
+      "timestamp": "2026-06-12T18:54:52.186250+00:00"
+    },
+    {
+      "severity": "CRASH",
+      "description": "Server returned 500",
+      "payload": "body=[]",
+      "status_code": 500,
+      "response_snippet": "<!doctype html>\n<html lang=en>\n<title>500 Internal Server Error</title>\n<h1>Internal Server Error</h1>\n<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>\n",
+      "endpoint": "POST http://127.0.0.1:5000/search",
+      "timestamp": "2026-06-12T18:54:52.311131+00:00"
+    },
+    {
+      "severity": "CRASH",
+      "description": "Server returned 500",
+      "payload": "body=\"just a string\"",
+      "status_code": 500,
+      "response_snippet": "<!doctype html>\n<html lang=en>\n<title>500 Internal Server Error</title>\n<h1>Internal Server Error</h1>\n<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>\n",
+      "endpoint": "POST http://127.0.0.1:5000/search",
+      "timestamp": "2026-06-12T18:54:52.377446+00:00"
+    },
+    {
+      "severity": "CRASH",
+      "description": "Server returned 500",
+      "payload": "body=12345",
+      "status_code": 500,
+      "response_snippet": "<!doctype html>\n<html lang=en>\n<title>500 Internal Server Error</title>\n<h1>Internal Server Error</h1>\n<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>\n",
+      "endpoint": "POST http://127.0.0.1:5000/search",
+      "timestamp": "2026-06-12T18:54:52.438461+00:00"
+    },
+    {
+      "severity": "AUTH_BYPASS",
+      "description": "Protected endpoint accessible without valid authentication",
+      "payload": "auth_header=no auth header",
+      "status_code": 200,
+      "response_snippet": "{\"database_url\":\"postgres://admin:password@prod-db:5432/main\",\"secret_key\":\"sk-super-secret-admin-key-12345\",\"users_count\":3}\n",
+      "endpoint": "GET http://127.0.0.1:5000/admin",
+      "timestamp": "2026-06-12T18:54:52.495790+00:00"
+    },
+    {
+      "severity": "AUTH_BYPASS",
+      "description": "Protected endpoint accessible without valid authentication",
+      "payload": "auth_header={\"Authorization\": \"\"}",
+      "status_code": 200,
+      "response_snippet": "{\"database_url\":\"postgres://admin:password@prod-db:5432/main\",\"secret_key\":\"sk-super-secret-admin-key-12345\",\"users_count\":3}\n",
+      "endpoint": "GET http://127.0.0.1:5000/admin",
+      "timestamp": "2026-06-12T18:54:52.563360+00:00"
+    },
+    {
+      "severity": "AUTH_BYPASS",
+      "description": "Protected endpoint accessible without valid authentication",
+      "payload": "auth_header={\"Authorization\": \"Bearer \"}",
+      "status_code": 200,
+      "response_snippet": "{\"database_url\":\"postgres://admin:password@prod-db:5432/main\",\"secret_key\":\"sk-super-secret-admin-key-12345\",\"users_count\":3}\n",
+      "endpoint": "GET http://127.0.0.1:5000/admin",
+      "timestamp": "2026-06-12T18:54:52.622167+00:00"
+    },
+    {
+      "severity": "AUTH_BYPASS",
+      "description": "Protected endpoint accessible without valid authentication",
+      "payload": "auth_header={\"Authorization\": \"Bearer AAAAAAAAAA\"}",
+      "status_code": 200,
+      "response_snippet": "{\"database_url\":\"postgres://admin:password@prod-db:5432/main\",\"secret_key\":\"sk-super-secret-admin-key-12345\",\"users_count\":3}\n",
+      "endpoint": "GET http://127.0.0.1:5000/admin",
+      "timestamp": "2026-06-12T18:54:52.680325+00:00"
+    },
+    {
+      "severity": "AUTH_BYPASS",
+      "description": "Protected endpoint accessible without valid authentication",
+      "payload": "auth_header={\"Authorization\": \"Bearer null\"}",
+      "status_code": 200,
+      "response_snippet": "{\"database_url\":\"postgres://admin:password@prod-db:5432/main\",\"secret_key\":\"sk-super-secret-admin-key-12345\",\"users_count\":3}\n",
+      "endpoint": "GET http://127.0.0.1:5000/admin",
+      "timestamp": "2026-06-12T18:54:52.743197+00:00"
+    },
+    {
+      "severity": "AUTH_BYPASS",
+      "description": "Protected endpoint accessible without valid authentication",
+      "payload": "auth_header={\"Authorization\": \"Basic YWRtaW46YWRtaW4=\"}",
+      "status_code": 200,
+      "response_snippet": "{\"database_url\":\"postgres://admin:password@prod-db:5432/main\",\"secret_key\":\"sk-super-secret-admin-key-12345\",\"users_count\":3}\n",
+      "endpoint": "GET http://127.0.0.1:5000/admin",
+      "timestamp": "2026-06-12T18:54:52.804734+00:00"
+    },
+    {
+      "severity": "AUTH_BYPASS",
+      "description": "Protected endpoint accessible without valid authentication",
+      "payload": "auth_header={\"Authorization\": \"Bearer eyJhbGciOiJub25lIn0.eyJyb2xlIjoiYWRtaW4ifQ.\"}",
+      "status_code": 200,
+      "response_snippet": "{\"database_url\":\"postgres://admin:password@prod-db:5432/main\",\"secret_key\":\"sk-super-secret-admin-key-12345\",\"users_count\":3}\n",
+      "endpoint": "GET http://127.0.0.1:5000/admin",
+      "timestamp": "2026-06-12T18:54:52.866021+00:00"
+    }
+  ]
+}
